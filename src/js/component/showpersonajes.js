@@ -9,7 +9,7 @@ const ShowPersonajes = ({ showAll }) => {
   return (
     <Container>
       <Row className="character-cards">
-        {store.personajes?.results?.slice(0, showAll ? undefined : 4).map((personaje, index) => (
+        {store.personajes?.slice(0, showAll ? undefined : 4).map((personaje, index) => (
           <MyCardPersonaje
             personaje={personaje}
             index={index}

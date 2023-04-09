@@ -8,7 +8,7 @@ function DetailPersonaje() {
     const { index } = useParams();
 
     try {
-        const personaje = store.personajes.results[parseInt(index)];
+        const personaje = store.personajes[parseInt(index)];
         return (
             <Container>
                 <Row className="justify-content-center">

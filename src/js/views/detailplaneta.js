@@ -7,7 +7,7 @@ function DetailPlaneta() {
   const { store } = useContext(Context);
   const { index } = useParams();
 
-  const planet = store.planets?.results?.[index];
+  const planet = store.planets?.[index];
 
   return (
     <Container>

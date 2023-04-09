@@ -9,7 +9,7 @@ const ShowPlanetas = ({ showAll }) => {
   return (
     <Container fluid className="star-wars">
       <Row className="character-cards">
-        {store.planets?.results?.slice(0, showAll ? undefined : 4).map((planeta, index) => (
+        {store.planets?.slice(0, showAll ? undefined : 4).map((planeta, index) => (
             <MyCardPlaneta
               planeta={planeta}
               index={index}
